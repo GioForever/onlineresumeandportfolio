@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services & Projects — Remegio Cabalida Jr.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Portfolio</div>
+    <nav class="nav">
+      <a class="nav-btn" href="index.html">Home</a>
+      <a class="nav-btn" href="about.html">About Me</a>
+      <a class="nav-btn" href="services.html">Services and Projects</a>
+      <a class="nav-btn" href="contact.html">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="content-block">
+      <h2>I can help you do simple tasks like programming a calculator, making a web grocery store, and web quizzes.</h2>
+
+      <h3 class="projects-title">My Projects</h3>
+      <ul class="project-list">
+        <li><a href="https://f-c-f-s.vercel.app/" target="_blank" rel="noopener">FCFS Scheduling Demo</a></li>
+        <li><a href="https://giogrocerystore.vercel.app/" target="_blank" rel="noopener">Gio Grocery Store</a></li>
+        <li><a href="https://simple-calculator-sepia-theta.vercel.app/" target="_blank" rel="noopener">Simple Calculator</a></li>
+      </ul>
+
+      <h3>Built-in Calculator (Elementary) — supports +, -, ×, ÷</h3>
+      <div id="calc" class="calculator">
+        <input type="text" id="calcDisplay" class="calc-display" readonly value="0" />
+        <div class="calc-keys">
+          <button class="key num" data-val="7">7</button>
+          <button class="key num" data-val="8">8</button>
+          <button class="key num" data-val="9">9</button>
+          <button class="key op" data-op="/">÷</button>
+
+          <button class="key num" data-val="4">4</button>
+          <button class="key num" data-val="5">5</button>
+          <button class="key num" data-val="6">6</button>
+          <button class="key op" data-op="*">×</button>
+
+          <button class="key num" data-val="1">1</button>
+          <button class="key num" data-val="2">2</button>
+          <button class="key num" data-val="3">3</button>
+          <button class="key op" data-op="-">−</button>
+
+          <button class="key num" data-val="0">0</button>
+          <button class="key" id="clear">C</button>
+          <button class="key" id="equals">=</button>
+          <button class="key op" data-op="+">+</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

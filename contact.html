@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Remegio Cabalida Jr.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Portfolio</div>
+    <nav class="nav">
+      <a class="nav-btn" href="index.html">Home</a>
+      <a class="nav-btn" href="about.html">About Me</a>
+      <a class="nav-btn" href="services.html">Services and Projects</a>
+      <a class="nav-btn" href="contact.html">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="content-block">
+      <h1>Contact Me</h1>
+      <p>Feel free to communicate with me</p>
+      <p><strong>Email:</strong> giopacaldocabalidajr.2000@gmail.com</p>
+      <p><strong>Phone Number:</strong> 09519333782</p>
+      <p><a href="https://m.facebook.com/GioPacaldoCabalidaJr/" target="_blank">https://m.facebook.com/GioPacaldoCabalidaJr/</a></p>
+
+      <form id="contactForm" onsubmit="return sendEmailViaMailto();">
+        <label>Your Name:</label>
+        <input type="text" id="yourName" required />
+
+        <label>Your Email:</label>
+        <input type="email" id="yourEmail" required />
+
+        <label>Your Message:</label>
+        <textarea id="yourMessage" rows="5" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit Message</button>
+      </form>
+      <p class="note">When you click Submit, your email client will open with the message prefilled so you can send it directly to <strong>giopacaldocabalidajr.2000@gmail.com</strong>.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
